@@ -32,6 +32,7 @@ public class Prueba2 extends JFrame {
 	private JPanel contentPane;
 	
 	JButton boton [] = new JButton[9];
+	int contador = 9;
 	/**
 	 * Launch the application.
 	 */
@@ -78,7 +79,11 @@ public class Prueba2 extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				if(Boton1.getText().equals("")) {
 					Boton1.setText("X");
-					turnoMaquina();
+					if(contador >= 1) {
+						//Boton1.setText("X");
+						contador--;
+						turnoMaquina();
+					}
 				}
 			}
 		});
@@ -91,7 +96,10 @@ public class Prueba2 extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				if(Boton2.getText().equals("")) {
 					Boton2.setText("X");
-					turnoMaquina();
+					contador--;
+					if(contador >= 1) {
+						turnoMaquina();
+					}
 				}
 			}
 		});
@@ -105,7 +113,10 @@ public class Prueba2 extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				if(Boton3.getText().equals("")) {
 					Boton3.setText("X");
-					turnoMaquina();
+					contador--;
+					if(contador >= 1) {
+						turnoMaquina();
+					}
 				}
 			}
 		});
@@ -119,7 +130,10 @@ public class Prueba2 extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				if(Boton4.getText().equals("")) {
 					Boton4.setText("X");
-					turnoMaquina();
+					contador--;
+					if(contador >= 1) {
+						turnoMaquina();
+					}
 				}
 			}
 		});
@@ -133,7 +147,10 @@ public class Prueba2 extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				if(Boton5.getText().equals("")) {
 					Boton5.setText("X");
-					turnoMaquina();
+					contador--;
+					if(contador >= 1) {
+						turnoMaquina();
+					}
 				}
 			}
 		});
@@ -147,7 +164,10 @@ public class Prueba2 extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				if(Boton6.getText().equals("")) {
 					Boton6.setText("X");
-					turnoMaquina();
+					contador--;
+					if(contador >= 1) {
+						turnoMaquina();
+					}
 				}
 			}
 		});
@@ -161,7 +181,10 @@ public class Prueba2 extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				if(Boton7.getText().equals("")) {
 					Boton7.setText("X");
-					turnoMaquina();
+					contador--;
+					if(contador >= 1) {
+						turnoMaquina();
+					}
 				}
 			}
 		});
@@ -175,7 +198,10 @@ public class Prueba2 extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				if(Boton8.getText().equals("")) {
 					Boton8.setText("X");
-					turnoMaquina();
+					contador--;
+					if(contador >= 1) {
+						turnoMaquina();
+					}
 				}
 			}
 		});
@@ -189,7 +215,10 @@ public class Prueba2 extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				if(Boton9.getText().equals("")) {
 					Boton9.setText("X");
-					turnoMaquina();
+					contador--;
+					if(contador >= 1) {
+						turnoMaquina();
+					}
 				}
 			}
 		});
@@ -210,9 +239,16 @@ public class Prueba2 extends JFrame {
 	}
 	
 	public void turnoMaquina() {
-		int c = (int)(0+Math.random()*8);
-		if(boton[c].getText().equals("")) {
-			boton[c].setText("O");
-		}
+		int C = 0;
+		do {
+			int c = (int)(0+Math.random()*8);
+			if(boton[c].getText().equals("")) {
+				if(contador >= 1) {
+					boton[c].setText("O");
+					C++;
+					contador--;
+				}
+			}
+		}while(C == 0);
 	}
 }
