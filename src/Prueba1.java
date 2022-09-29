@@ -36,7 +36,7 @@ public class Prueba1 extends JFrame {
 	 */
 	public Prueba1() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 738, 666);
 		contentPane = new JPanel();
 		contentPane.setBackground(Color.GRAY);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -47,17 +47,5 @@ public class Prueba1 extends JFrame {
 		lbPrueba1.setFont(new Font("Trebuchet MS", Font.PLAIN, 20));
 		lbPrueba1.setBounds(10, 10, 177, 28);
 		contentPane.add(lbPrueba1);
-		
-		JButton BotonAvanzar = new JButton("Avanzar");
-		BotonAvanzar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				Prueba2 abrir = new Prueba2();
-				abrir.setVisible(true);
-			}
-		});
-		BotonAvanzar.setFont(new Font("Trebuchet MS", Font.PLAIN, 13));
-		BotonAvanzar.setBounds(341, 232, 85, 21);
-		contentPane.add(BotonAvanzar);
 	}
-
 }
