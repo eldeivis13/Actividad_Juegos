@@ -251,4 +251,40 @@ public class Prueba2 extends JFrame {
 			}
 		}while(C == 0);
 	}
+	
+	public void comprobarGanador() {
+		if(boton[0].equals("X") && boton[1].equals("X") && boton[2].equals("X")) {
+			
+		}
+		
+		if(boton[3].equals("X") && boton[4].equals("X") && boton[5].equals("X")) {
+			
+		}
+		
+		if(boton[6].equals("X") && boton[7].equals("X") && boton[8].equals("X")) {
+			
+		}
+		
+		if(boton[0].equals("X") && boton[3].equals("X") && boton[6].equals("X")) {
+			
+		}
+		
+		if(boton[1].equals("X") && boton[4].equals("X") && boton[7].equals("X")) {
+			
+		}
+		
+		if(boton[2].equals("X") && boton[5].equals("X") && boton[8].equals("X")) {
+			
+		}
+		
+		if(boton[0].equals("X") && boton[4].equals("X") && boton[8].equals("X")) {
+			
+		}
+		
+		if(boton[2].equals("X") && boton[4].equals("X") && boton[6].equals("X")) {
+			
+		}
+		
+		
+	}
 }
