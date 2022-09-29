@@ -10,6 +10,20 @@ import java.awt.Font;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JProgressBar;
+import javax.swing.JToggleButton;
+import javax.swing.JRadioButton;
+import javax.swing.JSlider;
+import javax.swing.JSeparator;
+import javax.swing.JSpinner;
+import javax.swing.JTextPane;
+import javax.swing.JList;
+import javax.swing.JTree;
+import javax.swing.JScrollBar;
+import java.awt.Choice;
+import java.awt.Canvas;
+import java.awt.Checkbox;
+import javax.swing.JMenu;
 
 public class Prueba2 extends JFrame {
 
@@ -59,5 +73,4 @@ public class Prueba2 extends JFrame {
 		BotonAvanzar.setBounds(341, 232, 85, 21);
 		contentPane.add(BotonAvanzar);
 	}
-
 }
