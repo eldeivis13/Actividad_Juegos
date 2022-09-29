@@ -62,7 +62,7 @@ public class Prueba1 extends javax.swing.JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 738, 666);
 		contentPane = new JPanel();
-		contentPane.setBackground(Color.GRAY);
+		contentPane.setBackground(new Color(255, 255, 0));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
@@ -108,8 +108,8 @@ public class Prueba1 extends javax.swing.JFrame {
 		contentPane.add(lblEtiqueta1);
 		
 		JLabel lbPrueba1 = new JLabel("Prueba 1");
-		lbPrueba1.setForeground(Color.GREEN);
-		lbPrueba1.setFont(new Font("Trebuchet MS", Font.PLAIN, 20));
+		lbPrueba1.setForeground(Color.BLACK);
+		lbPrueba1.setFont(new Font("Wide Latin", Font.PLAIN, 20));
 		lbPrueba1.setBounds(10, 10, 177, 28);
 		contentPane.add(lbPrueba1);
 		
@@ -222,10 +222,10 @@ public class Prueba1 extends javax.swing.JFrame {
 		contentPane.add(letraW);
 		
 		JLabel LabelVisor = new JLabel("");
-		ImageIcon imagen = new ImageIcon("C:\\icon\\ahorcado_0.jpg");
+		ImageIcon imagen = new ImageIcon("C:\\icon\\ahorcado_6.jpg");
 		LabelVisor.setIcon(imagen);
 		LabelVisor.setBorder(new LineBorder(new Color(0, 0, 0), 3, true));
-		LabelVisor.setBounds(392, 75, 281, 435);
+		LabelVisor.setBounds(392, 10, 281, 509);
 		contentPane.add(LabelVisor);
 		
 		
