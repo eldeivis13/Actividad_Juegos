@@ -10,6 +10,8 @@ import java.awt.Font;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JToggleButton;
+import javax.swing.JEditorPane;
 
 public class Prueba1 extends JFrame {
 
@@ -44,120 +46,122 @@ public class Prueba1 extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lbPrueba1 = new JLabel("Prueba 1");
+		lbPrueba1.setForeground(Color.GREEN);
 		lbPrueba1.setFont(new Font("Trebuchet MS", Font.PLAIN, 20));
 		lbPrueba1.setBounds(10, 10, 177, 28);
 		contentPane.add(lbPrueba1);
 		
 		JButton letraA = new JButton("A");
-		letraA.setBounds(10, 210, 60, 37);
+		letraA.setBounds(10, 210, 39, 37);
 		contentPane.add(letraA);
 		
 		JButton letraB = new JButton("B");
-		letraB.setBounds(95, 210, 60, 37);
+		letraB.setBounds(67, 210, 39, 37);
 		contentPane.add(letraB);
 		
 		JButton letraC = new JButton("C");
-		letraC.setBounds(179, 210, 60, 37);
+		letraC.setBounds(123, 210, 39, 37);
 		contentPane.add(letraC);
 		
 		JButton letraD = new JButton("D");
-		letraD.setBounds(262, 210, 60, 37);
+		letraD.setBounds(177, 210, 39, 37);
 		contentPane.add(letraD);
 		
 		JButton letraE = new JButton("E");
-		letraE.setBounds(349, 210, 60, 37);
+		letraE.setBounds(234, 210, 39, 37);
 		contentPane.add(letraE);
 		
 		JButton letraF = new JButton("F");
-		letraF.setBounds(10, 267, 60, 37);
+		letraF.setBounds(10, 267, 39, 37);
 		contentPane.add(letraF);
 		
 		JButton letraG = new JButton("G");
-		letraG.setBounds(95, 267, 60, 37);
+		letraG.setBounds(67, 267, 39, 37);
 		contentPane.add(letraG);
 		
 		JButton letraH = new JButton("H");
-		letraH.setBounds(179, 267, 60, 37);
+		letraH.setBounds(123, 267, 39, 37);
 		contentPane.add(letraH);
 		
 		JButton letraI = new JButton("I");
-		letraI.setBounds(262, 267, 60, 37);
+		letraI.setBounds(177, 267, 39, 37);
 		contentPane.add(letraI);
 		
 		JButton letraJ = new JButton("J");
-		letraJ.setBounds(349, 267, 60, 37);
+		letraJ.setBounds(234, 267, 39, 37);
 		contentPane.add(letraJ);
 		
 		JButton letraK = new JButton("K");
-		letraK.setBounds(10, 328, 60, 37);
+		letraK.setBounds(10, 328, 39, 37);
 		contentPane.add(letraK);
 		
 		JButton letraQ = new JButton("Q");
-		letraQ.setBounds(10, 392, 60, 37);
+		letraQ.setBounds(123, 392, 39, 37);
 		contentPane.add(letraQ);
 		
-		JButton letraA_12 = new JButton("A");
-		letraA_12.setBounds(203, 522, 60, 37);
-		contentPane.add(letraA_12);
+		JButton letra— = new JButton("\u00D1");
+		letra—.setBounds(234, 328, 39, 37);
+		contentPane.add(letra—);
 		
 		JButton letraL = new JButton("L");
-		letraL.setBounds(95, 328, 60, 37);
+		letraL.setBounds(67, 328, 39, 37);
 		contentPane.add(letraL);
 		
 		JButton letraM = new JButton("M");
-		letraM.setBounds(179, 328, 60, 37);
+		letraM.setBounds(123, 328, 41, 37);
 		contentPane.add(letraM);
 		
 		JButton letraO = new JButton("O");
-		letraO.setBounds(262, 328, 60, 37);
+		letraO.setBounds(10, 392, 39, 37);
 		contentPane.add(letraO);
 		
 		JButton letraP = new JButton("P");
-		letraP.setBounds(349, 328, 60, 37);
+		letraP.setBounds(67, 392, 39, 37);
 		contentPane.add(letraP);
 		
 		JButton letraR = new JButton("R");
-		letraR.setBounds(95, 392, 60, 37);
+		letraR.setBounds(177, 392, 39, 37);
 		contentPane.add(letraR);
 		
 		JButton letraS = new JButton("S");
-		letraS.setBounds(179, 392, 60, 37);
+		letraS.setBounds(234, 392, 39, 37);
 		contentPane.add(letraS);
 		
 		JButton letraT = new JButton("T");
-		letraT.setBounds(10, 460, 60, 37);
+		letraT.setBounds(10, 460, 39, 37);
 		contentPane.add(letraT);
 		
 		JButton letraU = new JButton("U");
-		letraU.setBounds(95, 460, 60, 37);
+		letraU.setBounds(67, 460, 39, 37);
 		contentPane.add(letraU);
 		
-		JButton letraA_21 = new JButton("A");
-		letraA_21.setBounds(349, 460, 60, 37);
-		contentPane.add(letraA_21);
+		JButton letraY = new JButton("Y");
+		letraY.setBounds(67, 517, 39, 37);
+		contentPane.add(letraY);
 		
-		JButton letraA_22 = new JButton("A");
-		letraA_22.setBounds(262, 460, 60, 37);
-		contentPane.add(letraA_22);
+		JButton letraX = new JButton("X");
+		letraX.setBounds(234, 460, 39, 37);
+		contentPane.add(letraX);
 		
-		JButton letraA_23 = new JButton("A");
-		letraA_23.setBounds(179, 460, 60, 37);
-		contentPane.add(letraA_23);
+		JButton letraV = new JButton("V");
+		letraV.setBounds(123, 460, 39, 37);
+		contentPane.add(letraV);
 		
-		JButton letraA_24 = new JButton("A");
-		letraA_24.setBounds(349, 537, 60, 37);
-		contentPane.add(letraA_24);
+		JButton letraN = new JButton("N");
+		letraN.setBounds(177, 328, 41, 37);
+		contentPane.add(letraN);
 		
-		JButton letraA_25 = new JButton("A");
-		letraA_25.setBounds(10, 522, 60, 37);
-		contentPane.add(letraA_25);
+		JButton letraZ = new JButton("Z");
+		letraZ.setBounds(177, 517, 39, 37);
+		contentPane.add(letraZ);
 		
-		JButton letraA_26 = new JButton("A");
-		letraA_26.setBounds(95, 522, 60, 37);
-		contentPane.add(letraA_26);
+		JButton letraW = new JButton("W");
+		letraW.setBounds(177, 460, 43, 37);
+		contentPane.add(letraW);
 		
 		JButton INICIAR = new JButton("INICIAR JUEGO");
-		INICIAR.setBounds(20, 43, 135, 21);
+		INICIAR.setForeground(Color.BLUE);
+		INICIAR.setBounds(20, 43, 167, 28);
 		contentPane.add(INICIAR);
 	}
 }
