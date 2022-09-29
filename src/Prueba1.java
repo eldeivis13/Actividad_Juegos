@@ -67,6 +67,7 @@ public class Prueba1 extends javax.swing.JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 738, 666);
 		contentPane = new JPanel();
+		contentPane.setForeground(Color.DARK_GRAY);
 		contentPane.setBackground(Color.DARK_GRAY);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
