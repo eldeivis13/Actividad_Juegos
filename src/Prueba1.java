@@ -15,7 +15,27 @@ import javax.swing.JEditorPane;
 import javax.swing.border.LineBorder;
 import javax.swing.ImageIcon;
 
-public class Prueba1 extends JFrame {
+public class Prueba1 extends javax.swing.JFrame {
+	
+	
+	//visor de las imagenes
+	
+	String imagenes[] = {
+			
+			
+			"C:\\icon\\ahorcado_0.jpg",
+			"C:\\icon\\ahorcado_1.jpg",
+			"C:\\icon\\ahorcado_2.jpg",
+			"C:\\icon\\ahorcado_3.jpg",
+			"C:\\icon\\ahorcado_4.jpg",
+			"C:\\icon\\ahorcado_5.jpg",
+			"C:\\icon\\ahorcado_6.jpg",
+			"C:\\icon\\ahorcado_7.jpg"
+
+	
+	};
+	
+	int indice = 0;
 
 	private JPanel contentPane;
 
@@ -47,25 +67,45 @@ public class Prueba1 extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblletraj = new JLabel("J");
-		lblletraj.setForeground(Color.WHITE);
-		lblletraj.setBounds(94, 141, 28, 13);
-		contentPane.add(lblletraj);
+		JLabel lblEtiqueta8 = new JLabel("N");
+		lblEtiqueta8.setForeground(Color.WHITE);
+		lblEtiqueta8.setBounds(159, 141, 45, 13);
+		contentPane.add(lblEtiqueta8);
 		
-		JLabel lblletraR = new JLabel("R");
-		lblletraR.setForeground(Color.WHITE);
-		lblletraR.setBounds(77, 141, 45, 13);
-		contentPane.add(lblletraR);
+		JLabel lblEtiqueta7 = new JLabel("A");
+		lblEtiqueta7.setForeground(Color.WHITE);
+		lblEtiqueta7.setBounds(140, 141, 45, 13);
+		contentPane.add(lblEtiqueta7);
 		
-		JLabel lblletraO = new JLabel("O");
-		lblletraO.setForeground(Color.WHITE);
-		lblletraO.setBounds(56, 141, 45, 13);
-		contentPane.add(lblletraO);
+		JLabel lblEtiqueta6 = new JLabel("I");
+		lblEtiqueta6.setForeground(Color.WHITE);
+		lblEtiqueta6.setBounds(123, 141, 45, 13);
+		contentPane.add(lblEtiqueta6);
 		
-		JLabel lblletra = new JLabel("B");
-		lblletra.setForeground(Color.WHITE);
-		lblletra.setBounds(39, 141, 45, 13);
-		contentPane.add(lblletra);
+		JLabel lblEtiqueta5 = new JLabel("T");
+		lblEtiqueta5.setForeground(Color.WHITE);
+		lblEtiqueta5.setBounds(104, 141, 45, 13);
+		contentPane.add(lblEtiqueta5);
+		
+		JLabel lblEtiqueta4 = new JLabel("S");
+		lblEtiqueta4.setForeground(Color.WHITE);
+		lblEtiqueta4.setBounds(85, 141, 28, 13);
+		contentPane.add(lblEtiqueta4);
+		
+		JLabel lblEtiqueta3 = new JLabel("I");
+		lblEtiqueta3.setForeground(Color.WHITE);
+		lblEtiqueta3.setBounds(73, 141, 21, 13);
+		contentPane.add(lblEtiqueta3);
+		
+		JLabel lblEtiqueta2 = new JLabel("R");
+		lblEtiqueta2.setForeground(Color.WHITE);
+		lblEtiqueta2.setBounds(54, 141, 15, 13);
+		contentPane.add(lblEtiqueta2);
+		
+		JLabel lblEtiqueta1 = new JLabel("C");
+		lblEtiqueta1.setForeground(Color.WHITE);
+		lblEtiqueta1.setBounds(39, 141, 45, 13);
+		contentPane.add(lblEtiqueta1);
 		
 		JLabel lbPrueba1 = new JLabel("Prueba 1");
 		lbPrueba1.setForeground(Color.GREEN);
@@ -181,27 +221,67 @@ public class Prueba1 extends JFrame {
 		letraW.setBounds(177, 453, 46, 37);
 		contentPane.add(letraW);
 		
+		JLabel LabelVisor = new JLabel("");
+		ImageIcon imagen = new ImageIcon("C:\\icon\\ahorcado_0.jpg");
+		LabelVisor.setIcon(imagen);
+		LabelVisor.setBorder(new LineBorder(new Color(0, 0, 0), 3, true));
+		LabelVisor.setBounds(392, 75, 281, 435);
+		contentPane.add(LabelVisor);
+		
+		
 		JButton INICIAR = new JButton("INICIAR JUEGO");
+		INICIAR.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				LetE = "";
+				LetL = "";
+				LetF = "";
+				LetA = "";
+				LetN = "";
+				LetT = "";
+				
+				lblEtiqueta1.setText(""); 
+				lblEtiqueta2.setText(""); 
+				lblEtiqueta3.setText(""); 
+				lblEtiqueta4.setText(""); 
+				lblEtiqueta5.setText(""); 
+				lblEtiqueta6.setText(""); 
+				lblEtiqueta7.setText(""); 
+				lblEtiqueta8.setText(""); 
+				
+				//LabelVisor.setIcon(imagen);
+				indice = 0;
+				intentosP=0;
+				intentosN=0;
+			}
+		});
 		INICIAR.setFont(new Font("Tahoma", Font.PLAIN, 19));
 		INICIAR.setForeground(Color.BLUE);
 		INICIAR.setBounds(20, 43, 167, 28);
 		contentPane.add(INICIAR);
 		
-		JLabel lblImagenes = new JLabel("");
-		lblImagenes.setBorder(new LineBorder(new Color(0, 0, 0), 3, true));
-		lblImagenes.setBounds(393, 119, 281, 435);
-		contentPane.add(lblImagenes);
+		
 		
 		JLabel lblRayas = new JLabel("_ _ _ _ _ _ _ _ ");
 		lblRayas.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		lblRayas.setForeground(Color.WHITE);
-		lblRayas.setBounds(36, 119, 289, 50);
+		lblRayas.setBounds(39, 132, 187, 50);
 		contentPane.add(lblRayas);
 		
-		JLabel lblLetras = new JLabel("");
+		JLabel lblLetras = new JLabel("TECLADO");
 		lblLetras.setBackground(Color.BLACK);
 		lblLetras.setIcon(new ImageIcon("C:\\Users\\borja\\Desktop\\grado\\segundo a\u00F1o\\interfaces\\icon\\etiqueta1.jpg"));
 		lblLetras.setBounds(10, 104, 281, 78);
 		contentPane.add(lblLetras);
 	}
+	
+	int intentosP = 0, intentosN=0;
+	
+	String LetE="";
+	String LetL="";
+	String LetF="";
+	String LetA="";
+	String LetN="";
+	String LetT="";
+
+	
 }
