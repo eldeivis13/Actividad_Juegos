@@ -24,6 +24,7 @@ import java.awt.Choice;
 import java.awt.Canvas;
 import java.awt.Checkbox;
 import javax.swing.JMenu;
+import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import javax.swing.JTable;
 
@@ -32,7 +33,7 @@ public class Prueba2 extends JFrame {
 	private JPanel contentPane;
 	
 	JButton boton [] = new JButton[9];
-	int contador = 9;
+	static int contador = 9;
 	/**
 	 * Launch the application.
 	 */
@@ -80,8 +81,6 @@ public class Prueba2 extends JFrame {
 				if(Boton1.getText().equals("")) {
 					Boton1.setText("X");
 					if(contador >= 1) {
-						//Boton1.setText("X");
-						contador--;
 						turnoMaquina();
 					}
 				}
@@ -239,6 +238,7 @@ public class Prueba2 extends JFrame {
 	}
 	
 	public void turnoMaquina() {
+		comprobarGanador();
 		int C = 0;
 		do {
 			int c = (int)(0+Math.random()*8);
@@ -253,36 +253,77 @@ public class Prueba2 extends JFrame {
 	}
 	
 	public void comprobarGanador() {
-		if(boton[0].equals("X") && boton[1].equals("X") && boton[2].equals("X")) {
-			
+		
+		if(boton[0].getText().equals("X") && boton[1].getText().equals("X") && boton[2].getText().equals("X")) {
+			JOptionPane.showMessageDialog(null, "Has ganado, avanza a la siguiente prueba");
+			Prueba3 abrir = new Prueba3();
+			abrir.setVisible(true);
+		}else {
+			Perder abrir = new Perder();
+			abrir.setVisible(true);
 		}
 		
-		if(boton[3].equals("X") && boton[4].equals("X") && boton[5].equals("X")) {
-			
+		if(boton[3].getText().equals("X") && boton[4].getText().equals("X") && boton[5].getText().equals("X")) {
+			JOptionPane.showMessageDialog(null, "Has ganado, avanza a la siguiente prueba");
+			Prueba3 abrir = new Prueba3();
+			abrir.setVisible(true);
+		}else {
+			Perder abrir = new Perder();
+			abrir.setVisible(true);
 		}
 		
-		if(boton[6].equals("X") && boton[7].equals("X") && boton[8].equals("X")) {
-			
+		if(boton[6].getText().equals("X") && boton[7].getText().equals("X") && boton[8].getText().equals("X")) {
+			JOptionPane.showMessageDialog(null, "Has ganado, avanza a la siguiente prueba");
+			Prueba3 abrir = new Prueba3();
+			abrir.setVisible(true);
+		}else {
+			Perder abrir = new Perder();
+			abrir.setVisible(true);
 		}
 		
-		if(boton[0].equals("X") && boton[3].equals("X") && boton[6].equals("X")) {
-			
+		if(boton[0].getText().equals("X") && boton[3].getText().equals("X") && boton[6].getText().equals("X")) {
+			JOptionPane.showMessageDialog(null, "Has ganado, avanza a la siguiente prueba");
+			Prueba3 abrir = new Prueba3();
+			abrir.setVisible(true);
+		}else {
+			Perder abrir = new Perder();
+			abrir.setVisible(true);
 		}
 		
-		if(boton[1].equals("X") && boton[4].equals("X") && boton[7].equals("X")) {
-			
+		if(boton[1].getText().equals("X") && boton[4].getText().equals("X") && boton[7].getText().equals("X")) {
+			JOptionPane.showMessageDialog(null, "Has ganado, avanza a la siguiente prueba");
+			Prueba3 abrir = new Prueba3();
+			abrir.setVisible(true);
+		}else {
+			Perder abrir = new Perder();
+			abrir.setVisible(true);
 		}
 		
-		if(boton[2].equals("X") && boton[5].equals("X") && boton[8].equals("X")) {
-			
+		if(boton[2].getText().equals("X") && boton[5].getText().equals("X") && boton[8].getText().equals("X")) {
+			JOptionPane.showMessageDialog(null, "Has ganado, avanza a la siguiente prueba");
+			Prueba3 abrir = new Prueba3();
+			abrir.setVisible(true);
+		}else {
+			Perder abrir = new Perder();
+			abrir.setVisible(true);
 		}
 		
-		if(boton[0].equals("X") && boton[4].equals("X") && boton[8].equals("X")) {
-			
+		if(boton[0].getText().equals("X") && boton[4].getText().equals("X") && boton[8].getText().equals("X")) {
+			JOptionPane.showMessageDialog(null, "Has ganado, avanza a la siguiente prueba");
+			Prueba3 abrir = new Prueba3();
+			abrir.setVisible(true);
+		}else {
+			Perder abrir = new Perder();
+			abrir.setVisible(true);
 		}
 		
-		if(boton[2].equals("X") && boton[4].equals("X") && boton[6].equals("X")) {
-			
+		if(boton[2].getText().equals("X") && boton[4].getText().equals("X") && boton[6].getText().equals("X")) {
+			JOptionPane.showMessageDialog(null, "Has ganado, avanza a la siguiente prueba");
+			Prueba3 abrir = new Prueba3();
+			abrir.setVisible(true);
+		}else {
+			Perder abrir = new Perder();
+			abrir.setVisible(true);
 		}
 		
 		
