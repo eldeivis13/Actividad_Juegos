@@ -56,21 +56,16 @@ public class Prueba2 extends JFrame {
 	public Prueba2() {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 517, 431);
+		setBounds(100, 100, 738, 666);
 		contentPane = new JPanel();
-		contentPane.setBackground(Color.GRAY);
+		contentPane.setBackground(new Color(255, 222, 173));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lbPrueba2 = new JLabel("Prueba 2");
-		lbPrueba2.setFont(new Font("Trebuchet MS", Font.PLAIN, 20));
-		lbPrueba2.setBounds(10, 10, 190, 42);
-		contentPane.add(lbPrueba2);
-		
 		JPanel panel = new JPanel();
-		panel.setBackground(new Color(0, 0, 139));
-		panel.setBounds(46, 48, 398, 336);
+		panel.setBackground(new Color(47, 79, 79));
+		panel.setBounds(26, 28, 672, 577);
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
@@ -87,7 +82,7 @@ public class Prueba2 extends JFrame {
 			}
 		});
 		Boton1.setBackground(Color.WHITE);
-		Boton1.setBounds(0, 10, 115, 90);
+		Boton1.setBounds(10, 10, 169, 142);
 		panel.add(Boton1);
 		
 		JButton Boton2 = new JButton("");
@@ -104,7 +99,7 @@ public class Prueba2 extends JFrame {
 		});
 		Boton2.setFont(new Font("Tahoma", Font.PLAIN, 30));
 		Boton2.setBackground(Color.WHITE);
-		Boton2.setBounds(140, 10, 115, 90);
+		Boton2.setBounds(256, 10, 169, 142);
 		panel.add(Boton2);
 		
 		JButton Boton3 = new JButton("");
@@ -121,7 +116,7 @@ public class Prueba2 extends JFrame {
 		});
 		Boton3.setFont(new Font("Tahoma", Font.PLAIN, 30));
 		Boton3.setBackground(Color.WHITE);
-		Boton3.setBounds(285, 10, 115, 90);
+		Boton3.setBounds(493, 10, 169, 142);
 		panel.add(Boton3);
 		
 		JButton Boton4 = new JButton("");
@@ -138,7 +133,7 @@ public class Prueba2 extends JFrame {
 		});
 		Boton4.setFont(new Font("Tahoma", Font.PLAIN, 30));
 		Boton4.setBackground(Color.WHITE);
-		Boton4.setBounds(0, 119, 115, 90);
+		Boton4.setBounds(10, 211, 169, 142);
 		panel.add(Boton4);
 		
 		JButton Boton5 = new JButton("");
@@ -155,7 +150,7 @@ public class Prueba2 extends JFrame {
 		});
 		Boton5.setFont(new Font("Tahoma", Font.PLAIN, 30));
 		Boton5.setBackground(Color.WHITE);
-		Boton5.setBounds(140, 119, 115, 90);
+		Boton5.setBounds(256, 211, 169, 142);
 		panel.add(Boton5);
 		
 		JButton Boton6 = new JButton("");
@@ -172,7 +167,7 @@ public class Prueba2 extends JFrame {
 		});
 		Boton6.setFont(new Font("Tahoma", Font.PLAIN, 30));
 		Boton6.setBackground(Color.WHITE);
-		Boton6.setBounds(285, 119, 115, 90);
+		Boton6.setBounds(493, 211, 169, 142);
 		panel.add(Boton6);
 		
 		JButton Boton7 = new JButton("");
@@ -189,7 +184,7 @@ public class Prueba2 extends JFrame {
 		});
 		Boton7.setFont(new Font("Tahoma", Font.PLAIN, 30));
 		Boton7.setBackground(Color.WHITE);
-		Boton7.setBounds(0, 236, 115, 90);
+		Boton7.setBounds(10, 416, 169, 151);
 		panel.add(Boton7);
 		
 		JButton Boton8 = new JButton("");
@@ -206,7 +201,7 @@ public class Prueba2 extends JFrame {
 		});
 		Boton8.setFont(new Font("Tahoma", Font.PLAIN, 30));
 		Boton8.setBackground(Color.WHITE);
-		Boton8.setBounds(140, 236, 115, 90);
+		Boton8.setBounds(256, 416, 169, 151);
 		panel.add(Boton8);
 		
 		JButton Boton9 = new JButton("");
@@ -223,7 +218,7 @@ public class Prueba2 extends JFrame {
 		});
 		Boton9.setFont(new Font("Tahoma", Font.PLAIN, 30));
 		Boton9.setBackground(Color.WHITE);
-		Boton9.setBounds(285, 236, 115, 90);
+		Boton9.setBounds(493, 416, 169, 151);
 		panel.add(Boton9);
 		
 		boton[0] = Boton1;
@@ -253,12 +248,11 @@ public class Prueba2 extends JFrame {
 	}
 	
 	public void comprobarGanador() {
-		
 		if(boton[0].getText().equals("X") && boton[1].getText().equals("X") && boton[2].getText().equals("X")) {
 			JOptionPane.showMessageDialog(null, "Has ganado, avanza a la siguiente prueba");
 			Prueba3 abrir = new Prueba3();
 			abrir.setVisible(true);
-		}else {
+		}else if(boton[0].getText().equals("X") && boton[1].getText().equals("X") && boton[2].getText().equals("X")){
 			Perder abrir = new Perder();
 			abrir.setVisible(true);
 		}
@@ -267,7 +261,7 @@ public class Prueba2 extends JFrame {
 			JOptionPane.showMessageDialog(null, "Has ganado, avanza a la siguiente prueba");
 			Prueba3 abrir = new Prueba3();
 			abrir.setVisible(true);
-		}else {
+		}else if(boton[3].getText().equals("X") && boton[4].getText().equals("X") && boton[5].getText().equals("X")) {
 			Perder abrir = new Perder();
 			abrir.setVisible(true);
 		}
@@ -276,7 +270,7 @@ public class Prueba2 extends JFrame {
 			JOptionPane.showMessageDialog(null, "Has ganado, avanza a la siguiente prueba");
 			Prueba3 abrir = new Prueba3();
 			abrir.setVisible(true);
-		}else {
+		}else if(boton[6].getText().equals("X") && boton[7].getText().equals("X") && boton[8].getText().equals("X")){
 			Perder abrir = new Perder();
 			abrir.setVisible(true);
 		}
@@ -285,7 +279,7 @@ public class Prueba2 extends JFrame {
 			JOptionPane.showMessageDialog(null, "Has ganado, avanza a la siguiente prueba");
 			Prueba3 abrir = new Prueba3();
 			abrir.setVisible(true);
-		}else {
+		}else if(boton[0].getText().equals("X") && boton[3].getText().equals("X") && boton[6].getText().equals("X")) {
 			Perder abrir = new Perder();
 			abrir.setVisible(true);
 		}
@@ -294,7 +288,7 @@ public class Prueba2 extends JFrame {
 			JOptionPane.showMessageDialog(null, "Has ganado, avanza a la siguiente prueba");
 			Prueba3 abrir = new Prueba3();
 			abrir.setVisible(true);
-		}else {
+		}else if(boton[0].getText().equals("X") && boton[3].getText().equals("X") && boton[6].getText().equals("X")){
 			Perder abrir = new Perder();
 			abrir.setVisible(true);
 		}
@@ -303,7 +297,7 @@ public class Prueba2 extends JFrame {
 			JOptionPane.showMessageDialog(null, "Has ganado, avanza a la siguiente prueba");
 			Prueba3 abrir = new Prueba3();
 			abrir.setVisible(true);
-		}else {
+		}else if(boton[0].getText().equals("X") && boton[3].getText().equals("X") && boton[6].getText().equals("X")){
 			Perder abrir = new Perder();
 			abrir.setVisible(true);
 		}
@@ -312,7 +306,7 @@ public class Prueba2 extends JFrame {
 			JOptionPane.showMessageDialog(null, "Has ganado, avanza a la siguiente prueba");
 			Prueba3 abrir = new Prueba3();
 			abrir.setVisible(true);
-		}else {
+		}else if(boton[0].getText().equals("X") && boton[3].getText().equals("X") && boton[6].getText().equals("X")){
 			Perder abrir = new Perder();
 			abrir.setVisible(true);
 		}
@@ -321,7 +315,7 @@ public class Prueba2 extends JFrame {
 			JOptionPane.showMessageDialog(null, "Has ganado, avanza a la siguiente prueba");
 			Prueba3 abrir = new Prueba3();
 			abrir.setVisible(true);
-		}else {
+		}else if(boton[0].getText().equals("X") && boton[3].getText().equals("X") && boton[6].getText().equals("X")){
 			Perder abrir = new Perder();
 			abrir.setVisible(true);
 		}
