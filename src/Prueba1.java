@@ -95,12 +95,7 @@ public class Prueba1 extends javax.swing.JFrame {
 		LabelVisor.setBorder(new LineBorder(new Color(0, 0, 0), 3, true));
 		LabelVisor.setBounds(392, 10, 281, 509);
 		contentPane.add(LabelVisor);
-		
-		JLabel LabelVidas = new JLabel("");
 		ImageIcon Imag = new ImageIcon("C:\\icon\\emo6.jpg");
-		LabelVidas.setIcon(new ImageIcon("C:\\icon\\emo6.jpg"));
-		LabelVidas.setBounds(433, 561, 240, 37);
-		contentPane.add(LabelVidas);
 		
 
 		JLabel lblRayas = new JLabel("_ _ _ _ _ _ _ _ ");
@@ -167,6 +162,8 @@ public class Prueba1 extends javax.swing.JFrame {
 					ImageIcon Imagen = new ImageIcon("C:\\icon\\joan.jpg");
 					LabelVisor.setIcon(Imagen);
 					JOptionPane.showMessageDialog(null, "SIGUIENTE PRUEBA");
+					Prueba2 abrir  = new Prueba2();
+					abrir.setVisible(true);
 				}else {
 					JOptionPane.showMessageDialog(null, "Has encontrado UNA letra");
 					letraA.setVisible(false);
@@ -190,8 +187,6 @@ public class Prueba1 extends javax.swing.JFrame {
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					ImageIcon Imag = new ImageIcon(Img[indice]);
 					LabelVisor.setIcon(Imagen);
-					LabelVidas.setIcon(Imag);
-					
 					letraB.setVisible(false);
 					letraB.setAction(null);
 				}
@@ -248,6 +243,8 @@ public class Prueba1 extends javax.swing.JFrame {
 						ImageIcon Imagen = new ImageIcon("C:\\icon\\joan.jpg");
 						LabelVisor.setIcon(Imagen);
 						JOptionPane.showMessageDialog(null, "SIGUIENTE PRUEBA");
+						Prueba2 abrir  = new Prueba2();
+						abrir.setVisible(true);
 					}else {
 						JOptionPane.showMessageDialog(null, "Has encontrado TRES letra");
 						letraE.setVisible(false);
@@ -271,6 +268,8 @@ public class Prueba1 extends javax.swing.JFrame {
 						ImageIcon Imagen = new ImageIcon("C:\\icon\\joan.jpg");
 						LabelVisor.setIcon(Imagen);
 						JOptionPane.showMessageDialog(null, "SIGUIENTE PRUEBA");
+						Prueba2 abrir  = new Prueba2();
+						abrir.setVisible(true);
 					}else {
 						JOptionPane.showMessageDialog(null, "Has encontrado UNA letra");
 						letraF.setVisible(false);
@@ -413,6 +412,8 @@ public class Prueba1 extends javax.swing.JFrame {
 						ImageIcon Imagen = new ImageIcon("C:\\icon\\joan.jpg");
 						LabelVisor.setIcon(Imagen);
 						JOptionPane.showMessageDialog(null, "SIGUIENTE PRUEBA");
+						Prueba2 abrir  = new Prueba2();
+						abrir.setVisible(true);
 					}else {
 						JOptionPane.showMessageDialog(null, "Has encontrado UNA letra");
 						letraL.setVisible(false);
@@ -521,6 +522,8 @@ public class Prueba1 extends javax.swing.JFrame {
 						ImageIcon Imagen = new ImageIcon("C:\\icon\\joan.jpg");
 						LabelVisor.setIcon(Imagen);
 						JOptionPane.showMessageDialog(null, "SIGUIENTE PRUEBA");
+						Prueba2 abrir  = new Prueba2();
+						abrir.setVisible(true);
 					}else {
 						JOptionPane.showMessageDialog(null, "Has encontrado UNA letra");
 						letraT.setVisible(false);
@@ -612,6 +615,8 @@ public class Prueba1 extends javax.swing.JFrame {
 						ImageIcon Imagen = new ImageIcon("C:\\icon\\joan.jpg");
 						LabelVisor.setIcon(Imagen);
 						JOptionPane.showMessageDialog(null, "SIGUIENTE PRUEBA");
+						Prueba2 abrir  = new Prueba2();
+						abrir.setVisible(true);
 					}else {
 						JOptionPane.showMessageDialog(null, "Has encontrado UNA letra");
 						letraN.setVisible(false);
