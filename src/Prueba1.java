@@ -18,6 +18,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JToggleButton;
 import javax.swing.JEditorPane;
 import javax.swing.border.LineBorder;
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
 public class Prueba1 extends javax.swing.JFrame {
@@ -40,7 +41,18 @@ public class Prueba1 extends javax.swing.JFrame {
 	
 	};
 	
+	String Img []= {
+			
+			"C:\\icon\\emo0.jpg",
+			"C:\\icon\\emo1.jpg",
+			"C:\\icon\\emo2.jpg",
+			"C:\\icon\\emo3.jpg",
+			"C:\\icon\\emo4.jpg",
+			"C:\\icon\\emo5.jpg"
+	};
+	
 	int indice = 0;
+
 
 	private JPanel contentPane;
 
@@ -48,6 +60,7 @@ public class Prueba1 extends javax.swing.JFrame {
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
+		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -58,6 +71,9 @@ public class Prueba1 extends javax.swing.JFrame {
 				}
 			}
 		});
+		
+	
+
 	}
 
 	/**
@@ -75,10 +91,16 @@ public class Prueba1 extends javax.swing.JFrame {
 		
 		JLabel LabelVisor = new JLabel("");
 		ImageIcon imagen = new ImageIcon("C:\\icon\\ahorcado_0.jpg");
-		LabelVisor.setIcon(imagen);
+		LabelVisor.setIcon(new ImageIcon("C:\\icon\\ahorcado_0.jpg"));
 		LabelVisor.setBorder(new LineBorder(new Color(0, 0, 0), 3, true));
 		LabelVisor.setBounds(392, 10, 281, 509);
 		contentPane.add(LabelVisor);
+		
+		JLabel LabelVidas = new JLabel("");
+		ImageIcon Imag = new ImageIcon("C:\\icon\\emo6.jpg");
+		LabelVidas.setIcon(new ImageIcon("C:\\icon\\emo6.jpg"));
+		LabelVidas.setBounds(433, 561, 240, 37);
+		contentPane.add(LabelVidas);
 		
 
 		JLabel lblRayas = new JLabel("_ _ _ _ _ _ _ _ ");
@@ -87,70 +109,71 @@ public class Prueba1 extends javax.swing.JFrame {
 		lblRayas.setBounds(39, 132, 146, 50);
 		contentPane.add(lblRayas);
 		
-		JLabel lblEtiqueta8 = new JLabel("N");
+		JLabel lblEtiqueta8 = new JLabel(".");
 		lblEtiqueta8.setForeground(Color.WHITE);
 		lblEtiqueta8.setBounds(159, 141, 45, 13);
 		contentPane.add(lblEtiqueta8);
 		
-		JLabel lblEtiqueta7 = new JLabel("A");
+		JLabel lblEtiqueta7 = new JLabel(".");
 		lblEtiqueta7.setForeground(Color.WHITE);
 		lblEtiqueta7.setBounds(140, 141, 45, 13);
 		contentPane.add(lblEtiqueta7);
 		
-		JLabel lblEtiqueta6 = new JLabel("I");
+		JLabel lblEtiqueta6 = new JLabel(".");
 		lblEtiqueta6.setForeground(Color.WHITE);
 		lblEtiqueta6.setBounds(123, 141, 45, 13);
 		contentPane.add(lblEtiqueta6);
 		
-		JLabel lblEtiqueta5 = new JLabel("T");
+		JLabel lblEtiqueta5 = new JLabel(".");
 		lblEtiqueta5.setForeground(Color.WHITE);
 		lblEtiqueta5.setBounds(104, 141, 45, 13);
 		contentPane.add(lblEtiqueta5);
 		
-		JLabel lblEtiqueta4 = new JLabel("S");
+		JLabel lblEtiqueta4 = new JLabel(".");
 		lblEtiqueta4.setForeground(Color.WHITE);
 		lblEtiqueta4.setBounds(85, 141, 28, 13);
 		contentPane.add(lblEtiqueta4);
 		
-		JLabel lblEtiqueta3 = new JLabel("I");
+		JLabel lblEtiqueta3 = new JLabel(".");
 		lblEtiqueta3.setForeground(Color.WHITE);
 		lblEtiqueta3.setBounds(73, 141, 21, 13);
 		contentPane.add(lblEtiqueta3);
 		
-		JLabel lblEtiqueta2 = new JLabel("R");
+		JLabel lblEtiqueta2 = new JLabel(".");
 		lblEtiqueta2.setForeground(Color.WHITE);
 		lblEtiqueta2.setBounds(54, 141, 15, 13);
 		contentPane.add(lblEtiqueta2);
 		
-		JLabel lblEtiqueta1 = new JLabel("C");
+		JLabel lblEtiqueta1 = new JLabel(".");
 		lblEtiqueta1.setForeground(Color.WHITE);
 		lblEtiqueta1.setBounds(39, 141, 45, 13);
 		contentPane.add(lblEtiqueta1);
 		
-		JLabel lbPrueba1 = new JLabel("Prueba 1");
+		JLabel lbPrueba1 = new JLabel("EL AHORCADO");
 		lbPrueba1.setForeground(Color.RED);
 		lbPrueba1.setFont(new Font("Wide Latin", Font.PLAIN, 20));
-		lbPrueba1.setBounds(10, 10, 177, 28);
+		lbPrueba1.setBounds(10, 10, 306, 28);
 		contentPane.add(lbPrueba1);
 		
 		JButton letraA = new JButton("A");
 		letraA.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {	
 			if(indice<6) {
-				LetA += "A";
+				LetA = LetA + "A";
 				lblEtiqueta5.setText(LetA);
 				intentosP=intentosP+1;
 
 				if(intentosP==6) {
-					JOptionPane.showMessageDialog(null, "Ganaste ers un crack");
+					ImageIcon Imagen = new ImageIcon("C:\\icon\\joan.jpg");
+					LabelVisor.setIcon(Imagen);
+					JOptionPane.showMessageDialog(null, "SIGUIENTE PRUEBA");
 				}else {
-					JOptionPane.showMessageDialog(null, "Has encontrado una letra");
+					JOptionPane.showMessageDialog(null, "Has encontrado UNA letra");
 					letraA.setVisible(false);
 					letraA.setAction(null);
-							
-						}
+				}
 					
-					}
+				}
 			}
 		});
 		letraA.setBounds(10, 210, 46, 37);
@@ -165,7 +188,12 @@ public class Prueba1 extends javax.swing.JFrame {
 				}else {
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
+					ImageIcon Imag = new ImageIcon(Img[indice]);
 					LabelVisor.setIcon(Imagen);
+					LabelVidas.setIcon(Imag);
+					
+					letraB.setVisible(false);
+					letraB.setAction(null);
 				}
 			}
 		});
@@ -181,6 +209,8 @@ public class Prueba1 extends javax.swing.JFrame {
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
+					letraC.setVisible(false);
+					letraC.setAction(null);
 				}
 			}
 		});
@@ -196,6 +226,8 @@ public class Prueba1 extends javax.swing.JFrame {
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
+					letraD.setVisible(false);
+					letraD.setAction(null);
 				}
 			}
 		});
@@ -206,16 +238,18 @@ public class Prueba1 extends javax.swing.JFrame {
 		letraE.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(indice<6) {
-					LetE += "E";
+					LetE = LetE + "E";
 					lblEtiqueta1.setText(LetE);
 					lblEtiqueta3.setText(LetE);
 					lblEtiqueta8.setText(LetE);
 					intentosP=intentosP+1;
 					
 					if(intentosP==6) {
-						JOptionPane.showMessageDialog(null, "Ganaste ers un crack");
+						ImageIcon Imagen = new ImageIcon("C:\\icon\\joan.jpg");
+						LabelVisor.setIcon(Imagen);
+						JOptionPane.showMessageDialog(null, "SIGUIENTE PRUEBA");
 					}else {
-						JOptionPane.showMessageDialog(null, "Has encontrado tres letra");
+						JOptionPane.showMessageDialog(null, "Has encontrado TRES letra");
 						letraE.setVisible(false);
 						letraE.setAction(null);
 					}
@@ -229,14 +263,16 @@ public class Prueba1 extends javax.swing.JFrame {
 		letraF.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(indice<6) {
-					LetF += "F";
+					LetF = LetF + "F";
 					lblEtiqueta4.setText(LetF);
 					intentosP=intentosP+1;
 					
 					if(intentosP==6) {
-						JOptionPane.showMessageDialog(null, "Ganaste ers un crack");
+						ImageIcon Imagen = new ImageIcon("C:\\icon\\joan.jpg");
+						LabelVisor.setIcon(Imagen);
+						JOptionPane.showMessageDialog(null, "SIGUIENTE PRUEBA");
 					}else {
-						JOptionPane.showMessageDialog(null, "Has encontrado una letra");
+						JOptionPane.showMessageDialog(null, "Has encontrado UNA letra");
 						letraF.setVisible(false);
 						letraF.setAction(null);
 					}
@@ -255,6 +291,8 @@ public class Prueba1 extends javax.swing.JFrame {
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
+					letraG.setVisible(false);
+					letraG.setAction(null);
 				}
 			}
 		});
@@ -270,6 +308,8 @@ public class Prueba1 extends javax.swing.JFrame {
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
+					letraH.setVisible(false);
+					letraH.setAction(null);
 				}
 			}
 		});
@@ -285,6 +325,8 @@ public class Prueba1 extends javax.swing.JFrame {
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
+					letraI.setVisible(false);
+					letraI.setAction(null);
 				}
 			}
 		});
@@ -300,6 +342,8 @@ public class Prueba1 extends javax.swing.JFrame {
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
+					letraJ.setVisible(false);
+					letraJ.setAction(null);
 				}
 			}
 		});
@@ -315,6 +359,8 @@ public class Prueba1 extends javax.swing.JFrame {
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
+					letraK.setVisible(false);
+					letraK.setAction(null);
 				}
 			}
 		});
@@ -330,6 +376,8 @@ public class Prueba1 extends javax.swing.JFrame {
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
+					letraQ.setVisible(false);
+					letraQ.setAction(null);
 				}
 			}
 		});
@@ -345,6 +393,8 @@ public class Prueba1 extends javax.swing.JFrame {
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
+					letraÑ.setVisible(false);
+					letraÑ.setAction(null);
 				}
 			}
 		});
@@ -355,14 +405,16 @@ public class Prueba1 extends javax.swing.JFrame {
 		letraL.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(indice<6) {
-					LetL += "L";
+					LetL = LetL + "L";
 					lblEtiqueta2.setText(LetL);
 					intentosP=intentosP+1;
 					
 					if(intentosP==6) {
-						JOptionPane.showMessageDialog(null, "Ganaste ers un crack");
+						ImageIcon Imagen = new ImageIcon("C:\\icon\\joan.jpg");
+						LabelVisor.setIcon(Imagen);
+						JOptionPane.showMessageDialog(null, "SIGUIENTE PRUEBA");
 					}else {
-						JOptionPane.showMessageDialog(null, "Has encontrado una letra");
+						JOptionPane.showMessageDialog(null, "Has encontrado UNA letra");
 						letraL.setVisible(false);
 						letraL.setAction(null);
 					}
@@ -381,6 +433,8 @@ public class Prueba1 extends javax.swing.JFrame {
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
+					letraM.setVisible(false);
+					letraM.setAction(null);
 				}
 			}
 		});
@@ -396,6 +450,8 @@ public class Prueba1 extends javax.swing.JFrame {
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
+					letraO.setVisible(false);
+					letraO.setAction(null);
 				}
 			}
 		});
@@ -411,6 +467,8 @@ public class Prueba1 extends javax.swing.JFrame {
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
+					letraP.setVisible(false);
+					letraP.setAction(null);
 				}
 			}
 		});
@@ -426,6 +484,8 @@ public class Prueba1 extends javax.swing.JFrame {
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
+					letraR.setVisible(false);
+					letraR.setAction(null);
 				}
 			}
 		});
@@ -441,6 +501,8 @@ public class Prueba1 extends javax.swing.JFrame {
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
+					letraS.setVisible(false);
+					letraS.setAction(null);
 				}
 			}
 		});
@@ -451,14 +513,16 @@ public class Prueba1 extends javax.swing.JFrame {
 		letraT.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(indice<6) {
-					LetT += "T";
+					LetT = LetT + "T";
 					lblEtiqueta7.setText(LetT);
 					intentosP=intentosP+1;
 					
 					if(intentosP==6) {
-						JOptionPane.showMessageDialog(null, "Ganaste ers un crack");
+						ImageIcon Imagen = new ImageIcon("C:\\icon\\joan.jpg");
+						LabelVisor.setIcon(Imagen);
+						JOptionPane.showMessageDialog(null, "SIGUIENTE PRUEBA");
 					}else {
-						JOptionPane.showMessageDialog(null, "Has encontrado una letra");
+						JOptionPane.showMessageDialog(null, "Has encontrado UNA letra");
 						letraT.setVisible(false);
 						letraT.setAction(null);
 					}
@@ -477,6 +541,8 @@ public class Prueba1 extends javax.swing.JFrame {
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
+					letraU.setVisible(false);
+					letraU.setAction(null);
 				}
 			}
 		});
@@ -492,6 +558,8 @@ public class Prueba1 extends javax.swing.JFrame {
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
+					letraY.setVisible(false);
+					letraY.setAction(null);
 				}
 			}
 		});
@@ -507,6 +575,8 @@ public class Prueba1 extends javax.swing.JFrame {
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
+					letraX.setVisible(false);
+					letraX.setAction(null);
 				}
 			}
 		});
@@ -522,6 +592,8 @@ public class Prueba1 extends javax.swing.JFrame {
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
+					letraV.setVisible(false);
+					letraV.setAction(null);
 				}
 			}
 		});
@@ -532,14 +604,16 @@ public class Prueba1 extends javax.swing.JFrame {
 		letraN.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(indice<6) {
-					LetN += "N";
+					LetN = LetN + "N";
 					lblEtiqueta6.setText(LetN);
 					intentosP=intentosP+1;
 					
 					if(intentosP==6) {
-						JOptionPane.showMessageDialog(null, "Ganaste ers un crack");
+						ImageIcon Imagen = new ImageIcon("C:\\icon\\joan.jpg");
+						LabelVisor.setIcon(Imagen);
+						JOptionPane.showMessageDialog(null, "SIGUIENTE PRUEBA");
 					}else {
-						JOptionPane.showMessageDialog(null, "Has encontrado una letra");
+						JOptionPane.showMessageDialog(null, "Has encontrado UNA letra");
 						letraN.setVisible(false);
 						letraN.setAction(null);
 					}
@@ -558,6 +632,8 @@ public class Prueba1 extends javax.swing.JFrame {
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
+					letraZ.setVisible(false);
+					letraZ.setAction(null);
 				}
 			}
 		});
@@ -573,6 +649,8 @@ public class Prueba1 extends javax.swing.JFrame {
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
+					letraW.setVisible(false);
+					letraW.setAction(null);
 				}
 			}
 		});
@@ -605,11 +683,12 @@ public class Prueba1 extends javax.swing.JFrame {
 				indice = 0;
 				intentosP=0;
 				intentosN=0;
+				
 			}
 		});
 		INICIAR.setFont(new Font("Tahoma", Font.PLAIN, 19));
 		INICIAR.setForeground(Color.BLUE);
-		INICIAR.setBounds(20, 43, 167, 28);
+		INICIAR.setBounds(56, 48, 167, 28);
 		contentPane.add(INICIAR);
 		
 		JLabel lblLetras = new JLabel("TECLADO");
@@ -617,8 +696,6 @@ public class Prueba1 extends javax.swing.JFrame {
 		lblLetras.setIcon(new ImageIcon("C:\\Users\\borja\\Desktop\\grado\\segundo a\u00F1o\\interfaces\\icon\\etiqueta1.jpg"));
 		lblLetras.setBounds(10, 104, 281, 78);
 		contentPane.add(lblLetras);
-		
-		
 		
 	}
 	
@@ -630,6 +707,4 @@ public class Prueba1 extends javax.swing.JFrame {
 	String LetA="";
 	String LetN="";
 	String LetT="";
-
-	
 }
