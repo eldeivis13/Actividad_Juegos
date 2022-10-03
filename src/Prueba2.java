@@ -236,12 +236,19 @@ public class Prueba2 extends JFrame {
 		comprobarGanador();
 		int C = 0;
 		do {
-			int c = (int)(0+Math.random()*8);
-			if(boton[c].getText().equals("")) {
-				if(contador >= 1) {
-					boton[c].setText("O");
-					C++;
+			if(boton[0].getText().equals("X") && boton[1].getText().equals("X")) {
+				if(boton[2].getText().equals("")) {
+					boton[2].setText("O");
 					contador--;
+				}
+			} else {
+				int c = (int)(0+Math.random()*8);
+				if(boton[c].getText().equals("")) {
+					if(contador >= 1) {
+						boton[c].setText("O");
+						C++;
+						contador--;
+					}
 				}
 			}
 		}while(C == 0);
