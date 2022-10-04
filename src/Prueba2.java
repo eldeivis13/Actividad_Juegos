@@ -299,8 +299,12 @@ public class Prueba2 extends JFrame {
 			JOptionPane.showMessageDialog(null, "Has ganado, avanza a la siguiente prueba");
 			Prueba3 abrir = new Prueba3();
 			abrir.setVisible(true);
-		}else if(boton[0].getText().equals("X") && boton[1].getText().equals("X") && boton[2].getText().equals("X")){
+		}else if(boton[0].getText().equals("O") && boton[1].getText().equals("O") && boton[2].getText().equals("O")){
 			Perder abrir = new Perder();
+			abrir.setVisible(true);
+		}else if(contador == 0) {
+			JOptionPane.showMessageDialog(null, "Has empatado, reinicia la prueba");
+			Prueba2 abrir = new Prueba2();
 			abrir.setVisible(true);
 		}
 		
@@ -308,8 +312,12 @@ public class Prueba2 extends JFrame {
 			JOptionPane.showMessageDialog(null, "Has ganado, avanza a la siguiente prueba");
 			Prueba3 abrir = new Prueba3();
 			abrir.setVisible(true);
-		}else if(boton[3].getText().equals("X") && boton[4].getText().equals("X") && boton[5].getText().equals("X")) {
+		}else if(boton[3].getText().equals("O") && boton[4].getText().equals("O") && boton[5].getText().equals("O")) {
 			Perder abrir = new Perder();
+			abrir.setVisible(true);
+		}else if(contador == 0) {
+			JOptionPane.showMessageDialog(null, "Has empatado, reinicia la prueba");
+			Prueba2 abrir = new Prueba2();
 			abrir.setVisible(true);
 		}
 		
@@ -317,8 +325,12 @@ public class Prueba2 extends JFrame {
 			JOptionPane.showMessageDialog(null, "Has ganado, avanza a la siguiente prueba");
 			Prueba3 abrir = new Prueba3();
 			abrir.setVisible(true);
-		}else if(boton[6].getText().equals("X") && boton[7].getText().equals("X") && boton[8].getText().equals("X")){
+		}else if(boton[6].getText().equals("O") && boton[7].getText().equals("O") && boton[8].getText().equals("O")){
 			Perder abrir = new Perder();
+			abrir.setVisible(true);
+		}else if(contador == 0) {
+			JOptionPane.showMessageDialog(null, "Has empatado, reinicia la prueba");
+			Prueba2 abrir = new Prueba2();
 			abrir.setVisible(true);
 		}
 		
@@ -326,8 +338,12 @@ public class Prueba2 extends JFrame {
 			JOptionPane.showMessageDialog(null, "Has ganado, avanza a la siguiente prueba");
 			Prueba3 abrir = new Prueba3();
 			abrir.setVisible(true);
-		}else if(boton[0].getText().equals("X") && boton[3].getText().equals("X") && boton[6].getText().equals("X")) {
+		}else if(boton[0].getText().equals("O") && boton[3].getText().equals("O") && boton[6].getText().equals("O")) {
 			Perder abrir = new Perder();
+			abrir.setVisible(true);
+		}else if(contador == 0) {
+			JOptionPane.showMessageDialog(null, "Has empatado, reinicia la prueba");
+			Prueba2 abrir = new Prueba2();
 			abrir.setVisible(true);
 		}
 		
@@ -335,8 +351,12 @@ public class Prueba2 extends JFrame {
 			JOptionPane.showMessageDialog(null, "Has ganado, avanza a la siguiente prueba");
 			Prueba3 abrir = new Prueba3();
 			abrir.setVisible(true);
-		}else if(boton[0].getText().equals("X") && boton[3].getText().equals("X") && boton[6].getText().equals("X")){
+		}else if(boton[0].getText().equals("O") && boton[3].getText().equals("O") && boton[6].getText().equals("O")){
 			Perder abrir = new Perder();
+			abrir.setVisible(true);
+		}else if(contador == 0) {
+			JOptionPane.showMessageDialog(null, "Has empatado, reinicia la prueba");
+			Prueba2 abrir = new Prueba2();
 			abrir.setVisible(true);
 		}
 		
@@ -344,8 +364,12 @@ public class Prueba2 extends JFrame {
 			JOptionPane.showMessageDialog(null, "Has ganado, avanza a la siguiente prueba");
 			Prueba3 abrir = new Prueba3();
 			abrir.setVisible(true);
-		}else if(boton[0].getText().equals("X") && boton[3].getText().equals("X") && boton[6].getText().equals("X")){
+		}else if(boton[0].getText().equals("O") && boton[3].getText().equals("O") && boton[6].getText().equals("O")){
 			Perder abrir = new Perder();
+			abrir.setVisible(true);
+		}else if(contador == 0) {
+			JOptionPane.showMessageDialog(null, "Has empatado, reinicia la prueba");
+			Prueba2 abrir = new Prueba2();
 			abrir.setVisible(true);
 		}
 		
@@ -353,8 +377,12 @@ public class Prueba2 extends JFrame {
 			JOptionPane.showMessageDialog(null, "Has ganado, avanza a la siguiente prueba");
 			Prueba3 abrir = new Prueba3();
 			abrir.setVisible(true);
-		}else if(boton[0].getText().equals("X") && boton[3].getText().equals("X") && boton[6].getText().equals("X")){
+		}else if(boton[0].getText().equals("O") && boton[3].getText().equals("O") && boton[6].getText().equals("O")){
 			Perder abrir = new Perder();
+			abrir.setVisible(true);
+		}else if(contador == 0) {
+			JOptionPane.showMessageDialog(null, "Has empatado, reinicia la prueba");
+			Prueba2 abrir = new Prueba2();
 			abrir.setVisible(true);
 		}
 		
@@ -362,8 +390,12 @@ public class Prueba2 extends JFrame {
 			JOptionPane.showMessageDialog(null, "Has ganado, avanza a la siguiente prueba");
 			Prueba3 abrir = new Prueba3();
 			abrir.setVisible(true);
-		}else if(boton[0].getText().equals("X") && boton[3].getText().equals("X") && boton[6].getText().equals("X")){
+		}else if(boton[0].getText().equals("O") && boton[3].getText().equals("O") && boton[6].getText().equals("O")){
 			Perder abrir = new Perder();
+			abrir.setVisible(true);
+		}else if(contador == 0) {
+			JOptionPane.showMessageDialog(null, "Has empatado, reinicia la prueba");
+			Prueba2 abrir = new Prueba2();
 			abrir.setVisible(true);
 		}
 		
