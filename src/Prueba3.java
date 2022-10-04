@@ -10,6 +10,8 @@ import java.awt.Font;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JScrollPane;
+import javax.swing.JDesktopPane;
 
 public class Prueba3 extends JFrame {
 
@@ -38,13 +40,15 @@ public class Prueba3 extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 738, 666);
 		contentPane = new JPanel();
-		contentPane.setBackground(Color.GRAY);
+		contentPane.setForeground(Color.BLACK);
+		contentPane.setBackground(new Color(144, 238, 144));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lbPrueba3 = new JLabel("Prueba 3");
-		lbPrueba3.setFont(new Font("Trebuchet MS", Font.PLAIN, 20));
+		JLabel lbPrueba3 = new JLabel("PRUEBA 3");
+		lbPrueba3.setForeground(new Color(205, 92, 92));
+		lbPrueba3.setFont(new Font("Script MT Bold", Font.PLAIN, 31));
 		lbPrueba3.setBounds(10, 10, 182, 43);
 		contentPane.add(lbPrueba3);
 		
@@ -56,8 +60,7 @@ public class Prueba3 extends JFrame {
 			}
 		});
 		BotonAvanzar.setFont(new Font("Trebuchet MS", Font.PLAIN, 13));
-		BotonAvanzar.setBounds(341, 232, 85, 21);
+		BotonAvanzar.setBounds(606, 584, 85, 21);
 		contentPane.add(BotonAvanzar);
 	}
-
 }
