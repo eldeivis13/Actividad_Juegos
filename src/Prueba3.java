@@ -6,6 +6,8 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import java.awt.Color;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.Font;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
@@ -62,5 +64,30 @@ public class Prueba3 extends JFrame {
 		BotonAvanzar.setFont(new Font("Trebuchet MS", Font.PLAIN, 13));
 		BotonAvanzar.setBounds(606, 584, 85, 21);
 		contentPane.add(BotonAvanzar);
+		
+		JButton Inicio = new JButton("INICIAR JUEGO ");
+		Inicio.setFont(new Font("Tw Cen MT Condensed Extra Bold", Font.PLAIN, 16));
+		Inicio.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				int almaquina,alpersona;
+				
+				almaquina = (int)(2 + Math.random()*11);
+				alpersona =(int)(2 + Math.random()*11);
+				JOptionPane.showMessageDialog(null , ("la maquina ha sacado: " + almaquina + " tu has sacado: " + alpersona));
+				if (alpersona<almaquina) {
+					Perder pr = new Perder();
+					pr.setVisible(true);
+				}else if (alpersona>almaquina) {
+					JOptionPane.showMessageDialog(null, "Siguiente prueba");
+					Prueba4 pru = new Prueba4();
+					pru.setVisible(true);
+				}else if(alpersona==almaquina) {
+					Prueba3 pf = new Prueba3();
+					pf.setVisible(true);
+				}
+			}
+		});
+		Inicio.setBounds(68, 81, 211, 43);
+		contentPane.add(Inicio);
 	}
 }
