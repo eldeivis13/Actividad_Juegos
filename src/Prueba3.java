@@ -7,16 +7,23 @@ import javax.swing.border.EmptyBorder;
 import java.awt.Color;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-
+import javax.swing.JTextField;
+import java.awt.SystemColor;
+import javax.swing.SwingConstants;
+import java.awt.Insets;
 import java.awt.Font;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.util.Random;
 import java.awt.event.ActionEvent;
-import javax.swing.JScrollPane;
-import javax.swing.JDesktopPane;
+import javax.swing.JToggleButton;
+import javax.swing.JEditorPane;
+import javax.swing.border.LineBorder;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 
 public class Prueba3 extends JFrame {
-
+	
 	private JPanel contentPane;
 
 	/**
@@ -39,6 +46,14 @@ public class Prueba3 extends JFrame {
 	 * Create the frame.
 	 */
 	public Prueba3() {
+		JLabel lblMaquina = new JLabel("MAQ");
+		lblMaquina.setBounds(82, 349, 85, 53);
+		contentPane.add(lblMaquina);
+		
+		JLabel lblPersona = new JLabel("TU");
+		lblPersona.setBounds(364, 349, 85, 64);
+		contentPane.add(lblPersona);	
+		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 738, 666);
 		contentPane = new JPanel();
@@ -54,30 +69,25 @@ public class Prueba3 extends JFrame {
 		lbPrueba3.setBounds(10, 10, 182, 43);
 		contentPane.add(lbPrueba3);
 		
-		JButton BotonAvanzar = new JButton("Avanzar");
-		BotonAvanzar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				Prueba4 abrir = new Prueba4();
-				abrir.setVisible(true);
-			}
-		});
-		BotonAvanzar.setFont(new Font("Trebuchet MS", Font.PLAIN, 13));
-		BotonAvanzar.setBounds(606, 584, 85, 21);
-		contentPane.add(BotonAvanzar);
-		
 		JButton Inicio = new JButton("INICIAR JUEGO ");
-		Inicio.setFont(new Font("Tw Cen MT Condensed Extra Bold", Font.PLAIN, 16));
+		Inicio.setFont(new Font("Tw Cen MT Condensed Extra Bold", Font.PLAIN, 46));
 		Inicio.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				int almaquina,alpersona;
 				
-				almaquina = (int)(2 + Math.random()*11);
-				alpersona =(int)(2 + Math.random()*11);
-				JOptionPane.showMessageDialog(null , ("la maquina ha sacado: " + almaquina + " tu has sacado: " + alpersona));
+				int almaquina=0;
+				almaquina = (int)(2 + Math.random()*12);
+				
+				int alpersona=0;
+				alpersona =(int)(2 + Math.random()*12);
 				if (alpersona<almaquina) {
+					String letra = String.valueOf(almaquina);
+					lblMaquina.setText(letra);
+					JOptionPane.showMessageDialog(null, ("tu has sacado " + alpersona));
 					Perder pr = new Perder();
 					pr.setVisible(true);
 				}else if (alpersona>almaquina) {
+					JOptionPane.showMessageDialog(null, ("la maquina ha sacado " + almaquina));
+					JOptionPane.showMessageDialog(null, ("tu has sacado " + alpersona));
 					JOptionPane.showMessageDialog(null, "Siguiente prueba");
 					Prueba4 pru = new Prueba4();
 					pru.setVisible(true);
@@ -87,7 +97,12 @@ public class Prueba3 extends JFrame {
 				}
 			}
 		});
-		Inicio.setBounds(68, 81, 211, 43);
-		contentPane.add(Inicio);
+		Inicio.setBounds(151, 138, 378, 73);
+		contentPane.add(Inicio);	
+		
+		
+		
+		
+		
 	}
 }
