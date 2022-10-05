@@ -41,15 +41,7 @@ public class Prueba1 extends javax.swing.JFrame {
 	
 	};
 	
-	String Img []= {
-			
-			"C:\\icon\\emo0.jpg",
-			"C:\\icon\\emo1.jpg",
-			"C:\\icon\\emo2.jpg",
-			"C:\\icon\\emo3.jpg",
-			"C:\\icon\\emo4.jpg",
-			"C:\\icon\\emo5.jpg"
-	};
+	
 	
 	int indice = 0;
 
@@ -180,12 +172,9 @@ public class Prueba1 extends javax.swing.JFrame {
 		JButton letraB = new JButton("B");
 		letraB.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(indice==6) {
-					indice=6;
-				}else {
+				if(indice!=6) {
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
-					ImageIcon Imag = new ImageIcon(Img[indice]);
 					LabelVisor.setIcon(Imagen);
 					letraB.setVisible(false);
 					letraB.setAction(null);
@@ -198,9 +187,8 @@ public class Prueba1 extends javax.swing.JFrame {
 		JButton letraC = new JButton("C");
 		letraC.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(indice==6) {
-					indice=6;
-				}else {
+				if(indice!=6) {
+					
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
@@ -215,9 +203,8 @@ public class Prueba1 extends javax.swing.JFrame {
 		JButton letraD = new JButton("D");
 		letraD.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(indice==6) {
-					indice=6;
-				}else {
+				if(indice!=6) {
+				
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
@@ -284,9 +271,8 @@ public class Prueba1 extends javax.swing.JFrame {
 		JButton letraG = new JButton("G");
 		letraG.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(indice==6) {
-					indice=6;
-				}else {
+				if(indice!=6) {
+					
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
@@ -301,9 +287,8 @@ public class Prueba1 extends javax.swing.JFrame {
 		JButton letraH = new JButton("H");
 		letraH.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(indice==6) {
-					indice=6;
-				}else {
+				if(indice!=6) {
+					
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
@@ -318,9 +303,8 @@ public class Prueba1 extends javax.swing.JFrame {
 		JButton letraI = new JButton("I");
 		letraI.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(indice==6) {
-					indice=6;
-				}else {
+				if(indice!=6) {
+					
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
@@ -335,9 +319,8 @@ public class Prueba1 extends javax.swing.JFrame {
 		JButton letraJ = new JButton("J");
 		letraJ.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(indice==6) {
-					indice=6;
-				}else {
+				if(indice!=6) {
+					
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
@@ -352,9 +335,8 @@ public class Prueba1 extends javax.swing.JFrame {
 		JButton letraK = new JButton("K");
 		letraK.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(indice==6) {
-					indice=6;
-				}else {
+				if(indice!=6) {
+					
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
@@ -369,9 +351,8 @@ public class Prueba1 extends javax.swing.JFrame {
 		JButton letraQ = new JButton("Q");
 		letraQ.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(indice==6) {
-					indice=6;
-				}else {
+				if(indice!=6) {
+					
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
@@ -386,9 +367,8 @@ public class Prueba1 extends javax.swing.JFrame {
 		JButton letra— = new JButton("\u00D1");
 		letra—.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(indice==6) {
-					indice=6;
-				}else {
+				if(indice!=6) {
+					
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
@@ -428,9 +408,8 @@ public class Prueba1 extends javax.swing.JFrame {
 		JButton letraM = new JButton("M");
 		letraM.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(indice==6) {
-					indice=6;
-				}else {
+				if(indice!=6) {
+					
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
@@ -445,9 +424,8 @@ public class Prueba1 extends javax.swing.JFrame {
 		JButton letraO = new JButton("O");
 		letraO.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(indice==6) {
-					indice=6;
-				}else {
+				if(indice!=6) {
+					
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
@@ -462,9 +440,8 @@ public class Prueba1 extends javax.swing.JFrame {
 		JButton letraP = new JButton("P");
 		letraP.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(indice==6) {
-					indice=6;
-				}else {
+				if(indice!=6) {
+					
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
@@ -479,9 +456,8 @@ public class Prueba1 extends javax.swing.JFrame {
 		JButton letraR = new JButton("R");
 		letraR.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(indice==6) {
-					indice=6;
-				}else {
+				if(indice!=6) {
+				
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
@@ -496,9 +472,8 @@ public class Prueba1 extends javax.swing.JFrame {
 		JButton letraS = new JButton("S");
 		letraS.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(indice==6) {
-					indice=6;
-				}else {
+				if(indice!=6) {
+					
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
@@ -538,9 +513,8 @@ public class Prueba1 extends javax.swing.JFrame {
 		JButton letraU = new JButton("U");
 		letraU.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(indice==6) {
-					indice=6;
-				}else {
+				if(indice!=6) {
+					
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
@@ -555,9 +529,8 @@ public class Prueba1 extends javax.swing.JFrame {
 		JButton letraY = new JButton("Y");
 		letraY.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(indice==6) {
-					indice=6;
-				}else {
+				if(indice!=6) {
+					
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
@@ -572,9 +545,8 @@ public class Prueba1 extends javax.swing.JFrame {
 		JButton letraX = new JButton("X");
 		letraX.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(indice==6) {
-					indice=6;
-				}else {
+				if(indice!=6) {
+					
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
@@ -589,9 +561,8 @@ public class Prueba1 extends javax.swing.JFrame {
 		JButton letraV = new JButton("V");
 		letraV.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(indice==6) {
-					indice=6;
-				}else {
+				if(indice!=6) {
+					
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
@@ -631,9 +602,8 @@ public class Prueba1 extends javax.swing.JFrame {
 		JButton letraZ = new JButton("Z");
 		letraZ.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(indice==6) {
-					indice=6;
-				}else {
+				if(indice!=6) {
+					
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
@@ -648,9 +618,8 @@ public class Prueba1 extends javax.swing.JFrame {
 		JButton letraW = new JButton("W");
 		letraW.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(indice==6) {
-					indice=6;
-				}else {
+				if(indice!=6) {
+				
 					indice++;
 					ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 					LabelVisor.setIcon(Imagen);
@@ -698,7 +667,7 @@ public class Prueba1 extends javax.swing.JFrame {
 		
 		JLabel lblLetras = new JLabel("TECLADO");
 		lblLetras.setBackground(Color.BLACK);
-		lblLetras.setIcon(new ImageIcon("C:\\Users\\borja\\Desktop\\grado\\segundo a\u00F1o\\interfaces\\icon\\etiqueta1.jpg"));
+		lblLetras.setIcon(new ImageIcon("C:\\icon\\etiqueta1.jpg"));
 		lblLetras.setBounds(10, 104, 281, 78);
 		contentPane.add(lblLetras);
 		
