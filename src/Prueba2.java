@@ -255,7 +255,7 @@ public class Prueba2 extends JFrame {
 					}
 				}
 					
-			}else if(boton[2].getText().equals("X") && boton[4].getText().equals("O") && boton[6].getText().equals("X")) {
+			}else if(boton[0].getText().equals("X") && boton[3].getText().equals("X") && boton[6].getText().equals("O")) {
 				int c = (int)(0+Math.random()*8);
 				if(boton[c].getText().equals("")) {
 					if(contador >= 1) {
@@ -265,12 +265,223 @@ public class Prueba2 extends JFrame {
 					}
 				}
 				
-			}else if(boton[2].getText().equals("X") && boton[6].getText().equals("X")) {
-					if(boton[4].getText().equals("")) {
-						boton[4].setText("O");
+			}else if(boton[0].getText().equals("X") && boton[3].getText().equals("X")) {
+				if(boton[6].getText().equals("")) {
+					if(contador >= 1) {
+						boton[6].setText("O");
 						C++;
 						contador--;
 					}
+				}
+				
+			}else if(boton[6].getText().equals("X") && boton[3].getText().equals("X") && boton[0].getText().equals("O")) {
+				int c = (int)(0+Math.random()*8);
+				if(boton[c].getText().equals("")) {
+					if(contador >= 1) {
+						boton[c].setText("O");
+						C++;
+						contador--;
+					}
+				}
+				
+			}else if(boton[6].getText().equals("X") && boton[3].getText().equals("X")) {
+				if(boton[0].getText().equals("")) {
+					if(contador >= 1) {
+						boton[0].setText("O");
+						C++;
+						contador--;
+					}
+				}
+				
+			}else if(boton[1].getText().equals("X") && boton[4].getText().equals("X") && boton[7].getText().equals("O")) {
+				int c = (int)(0+Math.random()*8);
+				if(boton[c].getText().equals("")) {
+					if(contador >= 1) {
+						boton[c].setText("O");
+						C++;
+						contador--;
+					}
+				}
+				
+			}else if(boton[1].getText().equals("X") && boton[4].getText().equals("X")) {
+					if(boton[7].getText().equals("")) {
+						if(contador >= 1) {
+							boton[7].setText("O");
+							C++;
+							contador--;
+					}
+				}
+					
+			}else if(boton[7].getText().equals("X") && boton[4].getText().equals("X") && boton[1].getText().equals("O")) {
+				int c = (int)(0+Math.random()*8);
+				if(boton[c].getText().equals("")) {
+					if(contador >= 1) {
+						boton[c].setText("O");
+						C++;
+						contador--;
+					}
+				}
+				
+			}else if(boton[7].getText().equals("X") && boton[4].getText().equals("X")) {
+					if(boton[1].getText().equals("")) {
+						if(contador >= 1) {
+							boton[1].setText("O");
+							C++;
+							contador--;
+					}
+				}
+					
+			}else if(boton[3].getText().equals("X") && boton[4].getText().equals("X") && boton[5].getText().equals("O")) {
+				int c = (int)(0+Math.random()*8);
+				if(boton[c].getText().equals("")) {
+					if(contador >= 1) {
+						boton[c].setText("O");
+						C++;
+						contador--;
+					}
+				}
+				
+			}else if(boton[3].getText().equals("X") && boton[4].getText().equals("X")) {
+					if(boton[5].getText().equals("")) {
+						if(contador >= 1) {
+							boton[5].setText("O");
+							C++;
+							contador--;
+					}
+				}
+					
+			}else if(boton[5].getText().equals("X") && boton[4].getText().equals("X") && boton[3].getText().equals("O")) {
+				int c = (int)(0+Math.random()*8);
+				if(boton[c].getText().equals("")) {
+					if(contador >= 1) {
+						boton[c].setText("O");
+						C++;
+						contador--;
+					}
+				}
+				
+			}else if(boton[5].getText().equals("X") && boton[4].getText().equals("X")) {
+					if(boton[3].getText().equals("")) {
+						if(contador >= 1) {
+							boton[3].setText("O");
+							C++;
+							contador--;
+					}
+				}
+					
+			}else if(boton[0].getText().equals("X") && boton[4].getText().equals("X") && boton[8].getText().equals("O")) {
+				int c = (int)(0+Math.random()*8);
+				if(boton[c].getText().equals("")) {
+					if(contador >= 1) {
+						boton[c].setText("O");
+						C++;
+						contador--;
+					}
+				}
+				
+			}else if(boton[0].getText().equals("X") && boton[4].getText().equals("X")) {
+					if(boton[8].getText().equals("")) {
+						if(contador >= 1) {
+							boton[8].setText("O");
+							C++;
+							contador--;
+					}
+				}
+					
+			}else if(boton[8].getText().equals("X") && boton[4].getText().equals("X") && boton[0].getText().equals("O")) {
+				int c = (int)(0+Math.random()*8);
+				if(boton[c].getText().equals("")) {
+					if(contador >= 1) {
+						boton[c].setText("O");
+						C++;
+						contador--;
+					}
+				}
+				
+			}else if(boton[8].getText().equals("X") && boton[4].getText().equals("X")) {
+					if(boton[0].getText().equals("")) {
+						if(contador >= 1) {
+							boton[0].setText("O");
+							C++;
+							contador--;
+					}
+				}
+					
+			}else if(boton[2].getText().equals("X") && boton[4].getText().equals("X") && boton[6].getText().equals("O")) {
+				int c = (int)(0+Math.random()*8);
+				if(boton[c].getText().equals("")) {
+					if(contador >= 1) {
+						boton[c].setText("O");
+						C++;
+						contador--;
+					}
+				}
+				
+			}else if(boton[2].getText().equals("X") && boton[4].getText().equals("X")) {
+					if(boton[6].getText().equals("")) {
+						if(contador >= 1) {
+							boton[6].setText("O");
+							C++;
+							contador--;
+					}
+				}
+					
+			}else if(boton[6].getText().equals("X") && boton[4].getText().equals("X") && boton[2].getText().equals("O")) {
+				int c = (int)(0+Math.random()*8);
+				if(boton[c].getText().equals("")) {
+					if(contador >= 1) {
+						boton[c].setText("O");
+						C++;
+						contador--;
+					}
+				}
+				
+			}else if(boton[6].getText().equals("X") && boton[4].getText().equals("X")) {
+					if(boton[2].getText().equals("")) {
+						if(contador >= 1) {
+							boton[2].setText("O");
+							C++;
+							contador--;
+					}
+				}
+					
+			}else if(boton[2].getText().equals("X") && boton[5].getText().equals("X") && boton[8].getText().equals("O")) {
+				int c = (int)(0+Math.random()*8);
+				if(boton[c].getText().equals("")) {
+					if(contador >= 1) {
+						boton[c].setText("O");
+						C++;
+						contador--;
+					}
+				}
+				
+			}else if(boton[2].getText().equals("X") && boton[5].getText().equals("X")) {
+					if(boton[8].getText().equals("")) {
+						if(contador >= 1) {
+							boton[8].setText("O");
+							C++;
+							contador--;
+					}
+				}
+					
+			}else if(boton[8].getText().equals("X") && boton[5].getText().equals("X") && boton[2].getText().equals("O")) {
+				int c = (int)(0+Math.random()*8);
+				if(boton[c].getText().equals("")) {
+					if(contador >= 1) {
+						boton[c].setText("O");
+						C++;
+						contador--;
+					}
+				}
+				
+			}else if(boton[8].getText().equals("X") && boton[5].getText().equals("X")) {
+					if(boton[2].getText().equals("")) {
+						if(contador >= 1) {
+							boton[2].setText("O");
+							C++;
+							contador--;
+					}
+				}
 					
 			}else {
 				int c = (int)(0+Math.random()*8);
