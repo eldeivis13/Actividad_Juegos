@@ -79,9 +79,10 @@ public class Prueba3 extends JFrame {
 				
 				int alpersona=0;
 				alpersona =(int)(2 + Math.random()*12);
-				if (alpersona<almaquina) {
-					String letra = String.valueOf(almaquina);
-					lblMaquina.setText(letra);
+				
+				/*if (alpersona<almaquina) {
+					//String letra = String.valueOf(almaquina);
+					//lblMaquina.setText(letra);
 					JOptionPane.showMessageDialog(null, ("tu has sacado " + alpersona));
 					Perder pr = new Perder();
 					pr.setVisible(true);
@@ -94,7 +95,7 @@ public class Prueba3 extends JFrame {
 				}else if(alpersona==almaquina) {
 					Prueba3 pf = new Prueba3();
 					pf.setVisible(true);
-				}
+				}*/
 			}
 		});
 		Inicio.setBounds(151, 138, 378, 73);
