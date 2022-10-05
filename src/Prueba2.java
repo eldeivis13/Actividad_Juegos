@@ -33,7 +33,7 @@ public class Prueba2 extends JFrame {
 	private JPanel contentPane;
 	
 	JButton boton [] = new JButton[9];
-	static int contador = 9;
+	static int contador = 10, turno = 1;
 	/**
 	 * Launch the application.
 	 */
@@ -74,9 +74,18 @@ public class Prueba2 extends JFrame {
 		Boton1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(Boton1.getText().equals("")) {
-					Boton1.setText("X");
 					if(contador >= 1) {
-						turnoMaquina();
+						if(turno == 1) {
+							Boton1.setText("X");
+							contador--;
+							turno--;
+							comprobarGanador();
+						}else {
+							Boton1.setText("O");
+							contador--;	
+							turno++;
+							comprobarGanador();
+						}
 					}
 				}
 			}
@@ -89,10 +98,18 @@ public class Prueba2 extends JFrame {
 		Boton2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(Boton2.getText().equals("")) {
-					Boton2.setText("X");
-					contador--;
 					if(contador >= 1) {
-						turnoMaquina();
+						if(turno == 1) {
+							Boton2.setText("X");
+							contador--;
+							turno--;
+							comprobarGanador();
+						}else {
+							Boton2.setText("O");
+							contador--;	
+							turno++;
+							comprobarGanador();
+						}
 					}
 				}
 			}
@@ -106,10 +123,18 @@ public class Prueba2 extends JFrame {
 		Boton3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(Boton3.getText().equals("")) {
-					Boton3.setText("X");
-					contador--;
 					if(contador >= 1) {
-						turnoMaquina();
+						if(turno == 1) {
+							Boton3.setText("X");
+							contador--;
+							turno--;
+							comprobarGanador();
+						}else {
+							Boton3.setText("O");
+							contador--;	
+							turno++;
+							comprobarGanador();
+						}
 					}
 				}
 			}
@@ -123,10 +148,18 @@ public class Prueba2 extends JFrame {
 		Boton4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(Boton4.getText().equals("")) {
-					Boton4.setText("X");
-					contador--;
 					if(contador >= 1) {
-						turnoMaquina();
+						if(turno == 1) {
+							Boton4.setText("X");
+							contador--;
+							turno--;
+							comprobarGanador();
+						}else {
+							Boton4.setText("O");
+							contador--;	
+							turno++;
+							comprobarGanador();
+						}
 					}
 				}
 			}
@@ -140,10 +173,18 @@ public class Prueba2 extends JFrame {
 		Boton5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(Boton5.getText().equals("")) {
-					Boton5.setText("X");
-					contador--;
 					if(contador >= 1) {
-						turnoMaquina();
+						if(turno == 1) {
+							Boton5.setText("X");
+							contador--;
+							turno--;
+							comprobarGanador();
+						}else {
+							Boton5.setText("O");
+							contador--;	
+							turno++;
+							comprobarGanador();
+						}
 					}
 				}
 			}
@@ -157,10 +198,18 @@ public class Prueba2 extends JFrame {
 		Boton6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(Boton6.getText().equals("")) {
-					Boton6.setText("X");
-					contador--;
 					if(contador >= 1) {
-						turnoMaquina();
+						if(turno == 1) {
+							Boton6.setText("X");
+							contador--;
+							turno--;
+							comprobarGanador();
+						}else {
+							Boton6.setText("O");
+							contador--;	
+							turno++;
+							comprobarGanador();
+						}
 					}
 				}
 			}
@@ -174,10 +223,18 @@ public class Prueba2 extends JFrame {
 		Boton7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(Boton7.getText().equals("")) {
-					Boton7.setText("X");
-					contador--;
 					if(contador >= 1) {
-						turnoMaquina();
+						if(turno == 1) {
+							Boton7.setText("X");
+							contador--;
+							turno--;
+							comprobarGanador();
+						}else {
+							Boton7.setText("O");
+							contador--;	
+							turno++;
+							comprobarGanador();
+						}
 					}
 				}
 			}
@@ -191,10 +248,18 @@ public class Prueba2 extends JFrame {
 		Boton8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(Boton8.getText().equals("")) {
-					Boton8.setText("X");
-					contador--;
 					if(contador >= 1) {
-						turnoMaquina();
+						if(turno == 1) {
+							Boton8.setText("X");
+							contador--;
+							turno--;
+							comprobarGanador();
+						}else {
+							Boton8.setText("O");
+							contador--;	
+							turno++;
+							comprobarGanador();
+						}
 					}
 				}
 			}
@@ -208,10 +273,18 @@ public class Prueba2 extends JFrame {
 		Boton9.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(Boton9.getText().equals("")) {
-					Boton9.setText("X");
-					contador--;
 					if(contador >= 1) {
-						turnoMaquina();
+						if(turno == 1) {
+							Boton9.setText("X");
+							contador--;
+							turno--;
+							comprobarGanador();
+						}else {
+							Boton9.setText("O");
+							contador--;	
+							turno++;
+							comprobarGanador();
+						}
 					}
 				}
 			}
@@ -236,7 +309,7 @@ public class Prueba2 extends JFrame {
 		comprobarGanador();
 		int C = 0;
 		do {
-			if(boton[0].getText().equals("X") && boton[1].getText().equals("X") && boton[2].getText().equals("O")) {
+			/*if(boton[0].getText().equals("X") && boton[1].getText().equals("X") && boton[2].getText().equals("O")) {
 				int c = (int)(0+Math.random()*8);
 				if(boton[c].getText().equals("")) {
 					if(contador >= 1) {
@@ -250,6 +323,25 @@ public class Prueba2 extends JFrame {
 					if(boton[2].getText().equals("")) {
 						if(contador >= 1) {
 							boton[2].setText("O");
+							C++;
+							contador--;
+					}
+				}
+					
+			}else if(boton[2].getText().equals("X") && boton[1].getText().equals("X") && boton[0].getText().equals("O")) {
+				int c = (int)(0+Math.random()*8);
+				if(boton[c].getText().equals("")) {
+					if(contador >= 1) {
+						boton[c].setText("O");
+						C++;
+						contador--;
+					}
+				}
+				
+			}else if(boton[2].getText().equals("X") && boton[1].getText().equals("X")) {
+					if(boton[0].getText().equals("")) {
+						if(contador >= 1) {
+							boton[0].setText("O");
 							C++;
 							contador--;
 					}
@@ -483,6 +575,44 @@ public class Prueba2 extends JFrame {
 					}
 				}
 					
+			}else if(boton[6].getText().equals("X") && boton[7].getText().equals("X") && boton[8].getText().equals("O")) {
+				int c = (int)(0+Math.random()*8);
+				if(boton[c].getText().equals("")) {
+					if(contador >= 1) {
+						boton[c].setText("O");
+						C++;
+						contador--;
+					}
+				}
+				
+			}else if(boton[6].getText().equals("X") && boton[7].getText().equals("X")) {
+					if(boton[8].getText().equals("")) {
+						if(contador >= 1) {
+							boton[8].setText("O");
+							C++;
+							contador--;
+					}
+				}
+					
+			}else if(boton[8].getText().equals("X") && boton[7].getText().equals("X") && boton[6].getText().equals("O")) {
+				int c = (int)(0+Math.random()*8);
+				if(boton[c].getText().equals("")) {
+					if(contador >= 1) {
+						boton[c].setText("O");
+						C++;
+						contador--;
+					}
+				}
+				
+			}else if(boton[8].getText().equals("X") && boton[7].getText().equals("X")) {
+					if(boton[6].getText().equals("")) {
+						if(contador >= 1) {
+							boton[6].setText("O");
+							C++;
+							contador--;
+					}
+				}
+					
 			}else {
 				int c = (int)(0+Math.random()*8);
 				if(boton[c].getText().equals("")) {
@@ -492,13 +622,12 @@ public class Prueba2 extends JFrame {
 				contador--;
 					}
 				}
-			}
+			}*/
 			
 		}while(C == 0);
 	}
 	
 	public void comprobarGanador() {
-		if(contador >= 1) {
 			if(boton[0].getText().equals("X") && boton[1].getText().equals("X") && boton[2].getText().equals("X")) {
 				JOptionPane.showMessageDialog(null, "Has ganado, avanza a la siguiente prueba");
 				Prueba3 abrir = new Prueba3();
@@ -570,7 +699,8 @@ public class Prueba2 extends JFrame {
 				Perder abrir = new Perder();
 				abrir.setVisible(true);
 			}
-		}else {
+			
+			if(contador == 1) {
 			JOptionPane.showMessageDialog(null, "Has empatado, reinicia la prueba");
 			Prueba2 abrir = new Prueba2();
 			abrir.setVisible(true);

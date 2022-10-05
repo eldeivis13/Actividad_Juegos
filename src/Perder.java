@@ -34,7 +34,7 @@ public class Perder extends JFrame {
 	 */
 	public Perder() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 738, 666);
 		contentPane = new JPanel();
 		contentPane.setBackground(Color.GRAY);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -44,7 +44,7 @@ public class Perder extends JFrame {
 		JLabel lbFinJuego = new JLabel("HAS PERDIDO");
 		lbFinJuego.setHorizontalAlignment(SwingConstants.CENTER);
 		lbFinJuego.setFont(new Font("OCR A Extended", Font.PLAIN, 30));
-		lbFinJuego.setBounds(10, 10, 416, 243);
+		lbFinJuego.setBounds(0, 0, 724, 629);
 		contentPane.add(lbFinJuego);
 	}
 
