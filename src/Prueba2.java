@@ -245,26 +245,17 @@ public class Prueba2 extends JFrame {
 						contador--;
 					}
 				}
-			}else {
-				if(boton[0].getText().equals("X") && boton[1].getText().equals("X")) {
+				
+			}else if(boton[0].getText().equals("X") && boton[1].getText().equals("X")) {
 					if(boton[2].getText().equals("")) {
-						boton[2].setText("O");
-						C++;
-						contador--;
-					}
-				} else {
-					int c = (int)(0+Math.random()*8);
-					if(boton[c].getText().equals("")) {
 						if(contador >= 1) {
-							boton[c].setText("O");
+							boton[2].setText("O");
 							C++;
 							contador--;
-						}
 					}
 				}
-			}
-			
-			/*if(boton[2].getText().equals("X") && boton[4].getText().equals("O") && boton[6].getText().equals("X")) {
+					
+			}else if(boton[2].getText().equals("X") && boton[4].getText().equals("O") && boton[6].getText().equals("X")) {
 				int c = (int)(0+Math.random()*8);
 				if(boton[c].getText().equals("")) {
 					if(contador >= 1) {
@@ -273,24 +264,25 @@ public class Prueba2 extends JFrame {
 						contador--;
 					}
 				}
-			}else {
-				if(boton[2].getText().equals("X") && boton[6].getText().equals("X")) {
+				
+			}else if(boton[2].getText().equals("X") && boton[6].getText().equals("X")) {
 					if(boton[4].getText().equals("")) {
 						boton[4].setText("O");
 						C++;
 						contador--;
 					}
-				} else {
-					int c = (int)(0+Math.random()*8);
-					if(boton[c].getText().equals("")) {
-						if(contador >= 1) {
-							boton[c].setText("O");
-							C++;
-							contador--;
-						}
+					
+			}else {
+				int c = (int)(0+Math.random()*8);
+				if(boton[c].getText().equals("")) {
+				if(contador >= 1) {
+				boton[c].setText("O");
+				C++;
+				contador--;
 					}
 				}
-			}*/
+			}
+			
 		}while(C == 0);
 	}
 	
