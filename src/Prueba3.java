@@ -28,12 +28,12 @@ public class Prueba3 extends JFrame {
 	
 	
 	String Imagenees [] = {
-			"dado1.png",
-			"dado2.png",
-			"dado3.png",
-			"dado4.png",
-			"dado5.png",
-			"dado6.png"
+			"C:\\icon\\dado1.png",
+			"C:\\icon\\dado2.png",
+			"C:\\icon\\dado3.png",
+			"C:\\icon\\dado4.png",
+			"C:\\icon\\dado5.png",
+			"C:\\icon\\dado6.png"
 			
 	};
 	
