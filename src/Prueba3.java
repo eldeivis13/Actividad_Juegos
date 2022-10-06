@@ -29,6 +29,7 @@ public class Prueba3 extends JFrame {
 	
 	String Imagenees [] = {
 			"C:\\icon\\dado1.png",
+			"C:\\icon\\dado1.png",
 			"C:\\icon\\dado2.png",
 			"C:\\icon\\dado3.png",
 			"C:\\icon\\dado4.png",
@@ -104,13 +105,12 @@ public class Prueba3 extends JFrame {
 
 				int almaquina=0;
 				almaquina = (int)(1+ Math.random()*6);
-				
+				System.out.println(almaquina);
 				int alpersona=0;
 				alpersona =(int)(1 + Math.random()*6);		
-				
+				System.out.println(alpersona);
 				//maquina
 					if(almaquina==1) {
-						
 						ImageIcon Imagen = new ImageIcon(Imagenees[indice]);
 						lblM.setIcon(Imagen);
 						Inicio.setVisible(false);
