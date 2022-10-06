@@ -65,7 +65,7 @@ public class Prueba2 extends JFrame {
 		
 		JPanel panel = new JPanel();
 		panel.setBackground(new Color(47, 79, 79));
-		panel.setBounds(26, 28, 672, 577);
+		panel.setBounds(27, 52, 672, 577);
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
@@ -303,6 +303,12 @@ public class Prueba2 extends JFrame {
 		boton[6] = Boton7;
 		boton[7] = Boton8;
 		boton[8] = Boton9;
+		
+		JLabel lblNewLabel = new JLabel("3 EN RAYA");
+		lblNewLabel.setForeground(Color.RED);
+		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 27));
+		lblNewLabel.setBounds(264, 10, 140, 30);
+		contentPane.add(lblNewLabel);
 	}
 	
 	public void turnoMaquina() {
